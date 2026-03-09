@@ -10,3 +10,22 @@ def identificar_categoria(arquivo: Path) -> str:
         if extensao in extensoes:
             return categoria
     return "Outros"
+
+def gerar_nome_unico(destino: Path) -> Path:
+
+    contador = 1
+    novo_destino = destino
+
+    while novo_destino.exists():
+
+        nome = destino.stem
+        extensao = destino.suffix
+        pasta = destino.parent
+
+        novo_nome = f"{nome}_{contador}{extensao}"
+
+        novo_destino = pasta / novo_nome
+
+        contador += 1
+
+    return novo_destino

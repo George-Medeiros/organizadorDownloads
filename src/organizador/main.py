@@ -4,6 +4,7 @@ import shutil
 from .config import PASTA_DOWNLOADS
 from .funcoes import identificar_categoria
 from .logger import configurar_logger
+from .funcoes import identificar_categoria, gerar_nome_unico
 
 def organizar_downloads():
 
@@ -25,6 +26,8 @@ def organizar_downloads():
         pasta_destino.mkdir(exist_ok=True)
 
         destino = pasta_destino / arquivo.name
+        
+        destino = gerar_nome_unico(destino)
 
         try:
 
