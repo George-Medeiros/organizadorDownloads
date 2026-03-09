@@ -1,8 +1,8 @@
-from .organizador import organizar_downloads
+from .monitor import iniciar_monitor
 
 
 def main():
-    organizar_downloads()
+    iniciar_monitor()
 
 
 if __name__ == "__main__":
