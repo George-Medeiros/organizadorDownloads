@@ -52,7 +52,7 @@ requirements.txt
 Clone o repositório:
 
 
-git clone https://github.com/SEU-USUARIO/organizadorDownloads.git
+git clone https://github.com/George-Medeiros/organizadorDownloads.git
 
 
 Entre na pasta do projeto:
