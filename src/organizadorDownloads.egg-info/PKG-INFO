@@ -1,0 +1,6 @@
+Metadata-Version: 2.4
+Name: organizadorDownloads
+Version: 0.1.0
+Summary: Organizador automático da pasta Downloads
+Author: George Emerson
+Requires-Dist: watchdog

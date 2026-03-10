@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+src/organizador/__init__.py
+src/organizador/config.py
+src/organizador/funcoes.py
+src/organizador/logger.py
+src/organizador/main.py
+src/organizador/monitor.py
+src/organizador/organizador.py
+src/organizadorDownloads.egg-info/PKG-INFO
+src/organizadorDownloads.egg-info/SOURCES.txt
+src/organizadorDownloads.egg-info/dependency_links.txt
+src/organizadorDownloads.egg-info/entry_points.txt
+src/organizadorDownloads.egg-info/requires.txt
+src/organizadorDownloads.egg-info/top_level.txt

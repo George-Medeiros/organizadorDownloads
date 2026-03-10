@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "organizador-downloads"
+version = "0.1.0"
+description = "Organizador automático da pasta Downloads"
+authors = [
+    {name = "George Emerson"}
+]
+dependencies = [
+    "watchdog"
+]
+
+[project.scripts]
+organizador = "organizador.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -18,11 +18,13 @@ class DownloadHandler(FileSystemEventHandler):
 
         arquivo = event.src_path.lower()
 
+# ignora arquivos que ainda estão sendo baixados
         if any(arquivo.endswith(ext) for ext in EXTENSOES_TEMP):
             return
 
         print(f"Novo arquivo detectado: {event.src_path}")
 
+ # pequena pausa para garantir que o download terminou
         time.sleep(3)
 
         organizar_downloads()
